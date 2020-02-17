@@ -1,0 +1,17 @@
+import re
+print("COMPLEX CALCULATOR ")
+previous = 0
+run = True
+print("Type quit to terminate program")
+
+def mathperform():
+    global run
+    equation =input("Enter Eqaution ")
+    if equation == 'quit':
+        run = False
+    else:
+        previous = eval(equation)
+        print("you Answer is = ", previous)
+
+while run:
+    mathperform()
